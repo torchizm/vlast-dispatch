@@ -1,0 +1,25 @@
+WeaponNames = {
+    ['453432689']  = "Class 1", --"Pistol"
+    ['1593441988'] = "Class 1",--"Combat Pistol",
+    ['584646201'] = "Class 2",--"AP Pistol",
+    ['-1716589765'] = "Class 1", --"Pistol.50",
+    ['324215364'] = "Class 2", --"Uzi",
+    ['736523883'] = "Class 2", --"SMG",
+    ['-270015777'] = "Class 2", --"Assault SMG",
+    ['-1074790547'] = "Class 3", --"Assault Rifle",
+    ['-2084633992'] = "Class 3", --"Carbine Rifle",
+    ['-1357824103'] = "Class 3", --"Advanced Rifle",
+    ['-1076751822'] = "Class 1", --"SNS Pistol",
+    ['-1063057011'] = "Class 3", --"Special Carbine",
+    ['-771403250'] = "Class 1", --"Heavy Pistol",
+    ['2132975508'] = "Class 3", --"Bullpup Rifle",
+    ['137902532'] = "Class 1", --"Vintage Pistol",
+    ['984333226'] = "Heavy Shotgun",
+    ['-952879014'] = "Marksman Rifle",
+    ['171789620'] = "Class 2", --"Combat PDW",
+    ['-598887786'] = "Marksman Pistol",
+    ['-619010992'] = "Class 2", --"Machine Pistol",
+    ['-1045183535'] = "Class 1", --"Revolver",
+    ['1649403952'] = "Class 3", --"Compact Rifle",
+    ['-1121678507'] = "Class 2" --"Mini SMG"
+}

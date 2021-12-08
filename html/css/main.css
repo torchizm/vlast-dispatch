@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    transition: all 0.4s ease-in-out;
+    user-select: none !important;
+}
+
+:root {
+    --dark-blue: #314662;
+    --white: #ffffff;
+    --black: #000000;
+    --light-gray: #999999;
+
+    --primary: #1d2133;
+    --secondary: #555d80;
+    --tertiary: #c95d69;
+    --hover: #3c4880;
+}
+
+
+body {
+    position: relative;
+    overflow: hidden;
+}
+
+.input {
+    display: none;
+    background: var(--dark-blue);
+    border-radius: 4px;
+    border: 2px solid var(--light-gray) !important;
+    width: 100%;
+    height: 0px;
+    font-size: 16px;
+    padding: 8px;
+    box-sizing: border-box;
+    line-height: 1.25rem;
+    transition: all 0.25s;
+    font-family: Arial, FontAwesome;
+}
+
+.input[type=text] {
+    border: none;
+}
+
+*::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background: #333333 !important;
+}
+
+*::-webkit-scrollbar {
+    width: 6px;
+}
+
+.notification-container {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 32px;
+    width: 384px;
+    border-radius: 8px;
+}
+
+.app-container {
+    position: absolute;
+    margin: 16px -110% 16px 16px;
+    padding: 16px;
+    right: 0;
+    top: 0;
+    width: 384px;
+}
+
+.notification-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    background: var(--dark-blue);
+    border: 4px solid var(--hover);
+}
+
+.notification-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 4px;
+}
+
+.notification-header div span {
+    padding: 4px;
+    background: white;
+    color: black;
+    border-radius: 8px;
+    margin-right: 8px;
+}
+
+.notification-header span:first-child {
+    font-weight: 700;
+}
+
+.notification-details {
+    padding: 4px 8px;
+}
+
+.notificaiton-details span {
+    word-break: break-all;
+}
+
+.notification-footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.notification-footer .title {
+    margin: 4px 8px;
+    font-weight: 700;
+}
+
+.active-units {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.active-units span {
+    flex: 1 0 20%;
+    width: 100%;
+    padding: 4px;
+    margin: 4px;
+    margin-right: 2px;
+    text-align: center;
+    background: var(--dark-blue);
+    border: 4px solid var(--primary);
+    border-radius: 8px;
+    white-space: nowrap;
+}
+
+.app-header {
+    background: var(--dark-blue);
+    border: 4px solid var(--hover);
+    border-radius: 8px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.app-header-field {
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 15px !important;
+}
+
+.app-header-field i {
+    margin: 0px 2px;
+}
+
+.app-header-field i:last-child {
+    margin: 0px;
+}
+
+.app-header-field span {
+    margin: 0px 2px;
+}
+
+.app-header-field span:first-child {
+    font-weight: 700;
+}
+
+/* This required for flex-column-reverse overflow bug. */
+.outer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: auto;
+    margin: 24px 0px;
+    max-height: 85vh;
+    height: 100%;
+}
+
+.app-contents {
+    /* margin: 24px 0px; */
+    /* max-height: 85vh; */
+    height: 100%;
+    overflow: none;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-grow: 1;
+}
+
+.notification-footer-field {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.location-field {
+    margin: 4px 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.location-field #shortcut {
+    font-weight: 700;
+    margin-right: 8px;
+}
+
+.location-field i {
+    margin-right: 8px;
+}
+
+.shortcut {
+    color: white;
+}
+
+.shortcut:hover {
+    color: var(--hover);
+}
